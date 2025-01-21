@@ -401,6 +401,7 @@ img {
 
 
 
+
 /*=============== WORKS ===============*/
 .work {
   background-color: var(--container-color);
@@ -443,6 +444,34 @@ img {
 
 .work_link:hover i {
   transform: translateX(-.5rem);
+}
+
+:root {
+  --hue: 200; /* Ajusta este valor para el color deseado */
+}
+
+.github_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: hsl(var(--hue), 55%, 55%);
+  color: #000; /* Letra e icono en negro */
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.github_button:hover {
+  background-color: hsl(var(--hue), 65%, 45%);
+  color: #fff; /* Letra e icono en blanco al hacer hover */
+}
+
+.github_button i {
+  font-size: 18px;
 }
 
 
